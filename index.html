@@ -1,219 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal portfolio website-Tamal Barman</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/33c0413bde.js" crossorigin="anonymous"></script>
-</head>
-<body>
-   <div id="header">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/33c0413bde.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>IT Engineer</p>
-            <h1>Hi, I'm <span>Tamal</span><br>Barman From India</h1>
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Tamal</span><br />Barman, From India</h1>
         </div>
+      </div>
     </div>
-   </div> 
-   <!--About-->
-   <div id="about">
-    <div class="container">
+    <!--About-->
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
-            <div class="about-col-2">
-                <h1 class="subti-title">About Me</h1>
-                <p>My name is Tamal Barman. I graduated from Narula Institute of Technology in year of 2024.
-                Now, I am looking for my first full-time job. I have been working as a freelance web developer on Fiber.
-                I cannot say with 100% confidence where I see myself in five years or what my big career goal is.
-                The world is changing rapidly, and I don't have enough professional experience to be certain about such things.
-                However, I know that I can provide a fresh take and an extraordinary approach to every project. I am always open
-                to challenges and constructive feedback. I am open-minded and learn new things quickly. I want to become a team 
-                player and dedicate all my skills and talents to develop high-quality and unique products.</p>
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subti-title">About Me</h1>
+            <p>
+              Motivated and enthusiastic IT undergraduate with a strong
+              foundation in programming and a passion for technology. I am
+              currently pursuing a Bachelor of Technology in Information
+              Technology at Narula Institute of Technology. With a diverse
+              background in mechanical engineering and hands-on experience as a
+              Mechanical Technician at Lucas TVS, I bring a unique perspective
+              to the IT industry. I am eager to apply my technical skills,
+              contribute to organizational growth, and build a successful career
+              in the IT field.
+            </p>
 
-                <div class="tab-titles">
-                    <p class="tab-links  active-link" oneclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" oneclick="opentab('experince')">Experince</p>
-                    <p class="tab-links" oneclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Java Script</span><br>Design Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>App Development</span><br>Building Android/ios apps</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experince">
-                    <ul>
-                        <li><span>2022-Current</span><br>UI/UX DEsign Training at Narula Institute</li>
-                        <li><span>2021-2022</span><br>Team lead at Capgimini LLC.</li>
-                        <li><span>2020-2021</span><br>UX/UI Design Excecutive at Sunrise Digital Ltd.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2019</span><br>UX/UI Design Training at Narula Institute</li>
-                        <li><span>2019</span><br>Btech from NIT Kolkata</li>
-                        <li><span>2018</span><br>Diploma from EIEM Kolkata</li>
-                    </ul>
-                </div>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experince')">Experince</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-        </div> 
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Subject of Interest</span><br />
+                  Data Base Management Systeam, Operating System, Computer
+                  Networking
+                </li>
+                <li>
+                  <span>Object Oriented Programming</span><br />Java (Expert),
+                  SQL(Intermediate) C++ (Intermediate), Python (Beginner)
+                </li>
+                <li>
+                  <span>Web Development</span><br />Html, CSS, JS, PHP
+                  (Beginner)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experince">
+              <ul>
+                <li>
+                  <span>2020-2021</span><br />
+                  Lucas TVS Ltd. Pune, Maharashtra, On-site
+                </li>
+                <li>
+                  <span>Key responsibilities</span><br />
+                  Documentation PCC/MCS/NPD/ALR/MLR and Consumable & Critical
+                  Spare, Rotor Pallet With Tool Room Person, Support for
+                  Breakdown & Troubleshooting The Tool, Continues Improvements
+                  Projects, Tool Modification/Breakdown Time Reduction, Maintain
+                  Proper 5s Tools Rack
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of Technology</span><br />Narula Institute of
+                  Technology / Information Tehcnology, 85.6%
+                </li>
+                <li>
+                  <span>Diploma</span><br />Elitte Institute of Engineering and
+                  Management / Mechanical Engineering, 75.3%
+                </li>
+                <li>
+                  <span>Secondary Education</span><br />Gopal Nagar M.S.S High
+                  School / All Subject, 72.4%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-   <!--services-->
-   <div id= "services" class="services">
-    <div class="container">
+    <!--services-->
+    <div id="services" class="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam, reprehenderit, excepturi nostrum rerum similique obcaecati veniam ab delectus magnam aspernatur minus reiciendis dicta saepe, animi amet. Enim, doloremque ipsam!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/IX Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam, reprehenderit, excepturi nostrum rerum similique obcaecati veniam ab delectus magnam aspernatur minus reiciendis dicta saepe, animi amet. Enim, doloremque ipsam!</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam, reprehenderit, excepturi nostrum rerum similique obcaecati veniam ab delectus magnam aspernatur minus reiciendis dicta saepe, animi amet. Enim, doloremque ipsam!</p>
-                <a href="#">Learn more</a>
-            </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Hello, a web designer specializing in transformative designs. I
+              create visually stunning and user-friendly websites that captivate
+              audiences and drive results. Let's redefine your online presence
+              together.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/IX Design</h2>
+            <p>
+              Hello, an aspiring UI/UX designer passionate about creating
+              meaningful user experiences. Let's learn and grow together in the
+              world of design.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              Hello, an aspiring App designer passionate about creating
+              meaningful user experiences. Let's learn and grow together in the
+              world of design.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
-   </div>
-   <!--protfolio-->
-   <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
+    <!--protfolio-->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>The app connects you to the talented people arround the world.Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people arround the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Music App</h3>
-                    <p>The app connects you to the talented people arround the world.Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people arround the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Online Shop App</h3>
-                    <p>The app connects you to the talented people arround the world.Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shop App</h3>
+              <p>
+                The app connects you to the talented people arround the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See More</a>
+      </div>
     </div>
-   </div>
-   <!--Contact-->
-   <div id="contact">
-    <div class="container">
+    <!--Contact-->
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i><i class="fa-solid fa-paper-plane"></i></i> tamalbarman86@gmail.com</p>
-                <p><i><i class="fa-solid fa-square-phone"></i></i> 7478286972</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/tamalbarman86/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/tamalbrman"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com/tamalbrman"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/tamalbrman/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i><i class="fa-solid fa-paper-plane"></i></i>
+              tamalbarman86@gmail.com
+            </p>
+            <p>
+              <i><i class="fa-solid fa-square-phone"></i></i> 7478286972
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/tamalbarman86/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/tamalbrman"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com/tamalbrman"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/tamalbrman/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Massege" rows="6" placeholder="Your Massege"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Massege"
+                rows="6"
+                placeholder="Your Massege"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright ©️ Tamal. Made with <i><i class="fa-solid fa-heart"></i></i> by NIT- Kolkata</p>
-    </div>
-   </div>
+    <!--Script Part-->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-
-
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemenu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzt_Bt_FXRQh1qi7RPzks_Y9Df66nYnqN12pHXDIU2OpoKlUCviLgzfbdhNVl9aUTCg8g/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Messege sent sucessfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzt_Bt_FXRQh1qi7RPzks_Y9Df66nYnqN12pHXDIU2OpoKlUCviLgzfbdhNVl9aUTCg8g/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Messege sent sucessfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
